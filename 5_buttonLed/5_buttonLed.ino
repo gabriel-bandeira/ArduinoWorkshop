@@ -20,8 +20,10 @@ void setup()
 {
 	// Setando o pino do led como saida
 	pinMode(ledPin, OUTPUT);
+
 	// Setando o pino do botao como entrada
 	pinMode(buttonPin, INPUT);
+
 	// Liberando a comunicacao serial, para velocidade de 9600
 	Serial.begin(9600);
 }
@@ -29,14 +31,14 @@ void setup()
 // Funcao que fica rodando enquanto o arduino estiver ligado
 void loop()
 {
-	// salvando o valor da porta A0, que esta o LDR na variavel ldrValue
+	// salvando o valor da porta buttonPin, que esta o botao, na variavel buttonState
 	int buttonState = digitalRead(buttonPin);
 
-	// imprime na tela serial o valor lido do LDR
+	// imprime na tela serial o valor lido do botao
 	Serial.print("Estado do botao: ");
 	Serial.println(buttonState);
 
-	// Vendo se o ldrValue esta dentro ou nao do threshold para ativar o led
+	// Vendo se o botao esta pressionado para ativar o led
 	if(buttonState == HIGH)
 	{
 		// Acender o LED
