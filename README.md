@@ -21,3 +21,10 @@ Material para Curso Básico de Arduino
 ### Apresentação
 
 https://docs.google.com/presentation/d/1_VDIDtXoJlssQPsEmcu8p6J4-R9FGrK84Uq6FPxk5SQ/edit?usp=sharing
+
+<br>
+<br>
+
+### Já ouviu falar do Brasilino?
+
+https://github.com/OtacilioN/Brasilino
